@@ -1,0 +1,50 @@
+/* General Styling for the ArrayVisualizer */
+.array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    height: 400px; /* Fixed height to contain all bars */
+    width: 100%;
+  }
+  
+  .array-bar {
+    width: 10px; /* Each bar width */
+    margin: 0 2px; /* Spacing between bars */
+    background-color: #4caf50; /* Default color for unsorted bars */
+    transition: background-color 0.3s ease, height 0.3s ease;
+  }
+  
+  /* Unsorted Bar (bars that are not selected, compared, or sorted) */
+  .array-bar.unsorted {
+    background-color: #4caf50; /* Default green color for unsorted bars */
+  }
+  
+  /* Selected Bar (currently being worked on) */
+  .array-bar.selected {
+    background-color: #ff9800; /* Orange for selected bars */
+  }
+  
+  /* Compare Bar (being compared with another bar) */
+  .array-bar.compare {
+    background-color: #2196f3; /* Blue for compared bars */
+  }
+  
+  /* Sorted Bar (already sorted) */
+  .array-bar.sorted {
+    background-color: #8bc34a; /* Light Green for sorted bars */
+  }
+  .array-visualizer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+  
+  .array-visualizer-container div {
+    width: 10px;
+    margin: 0 1px;
+    background-color: skyblue;
+    display: inline-block;
+  }
+    

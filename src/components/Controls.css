@@ -1,0 +1,94 @@
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .controls select,
+  .controls button,
+  .controls input[type="range"] {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: 0.3s ease;
+  }
+  
+  .controls select:focus,
+  .controls button:focus,
+  .controls input[type="range"]:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .controls button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .controls button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .controls button:hover:not(:disabled) {
+    background-color: #2980b9;
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .slider-container label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  input[type="range"] {
+    width: 150px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    background-color: #2980b9;
+  }
+  
+  .controls select,
+  .controls button {
+    width: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .controls {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .slider-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
